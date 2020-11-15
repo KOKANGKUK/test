@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Prac01OpenChallenge {
 
+	private static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		System.out.println("끝말잇기 게임을 시작합니다...");
-		Scanner sc = new Scanner(System.in);
 		System.out.print("참가하는 인원은 몇명입니까 >> ");
 		int cnt = sc.nextInt();
 		Player[] players = new Player[cnt];
@@ -20,7 +20,6 @@ public class Prac01OpenChallenge {
 	}
 
 	public static void run(Player[] players) {
-		Scanner sc = new Scanner(System.in);
 		int i = 0;
 		String word = "아버지";
 		int lastIdx = word.length() - 1;
